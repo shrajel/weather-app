@@ -9,7 +9,7 @@ const[search,setsearch]= useState("Lucknow");
 useEffect(() => {
 
     const fetchApi= async () => { 
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=a3af1f6670d721b3ee5a160bb1353fea`
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=a3af1f6670d721b3ee5a160bb1353fea`
         const response = await fetch(url);
       const resJson = await response.json();
      // console.log(resJson);
